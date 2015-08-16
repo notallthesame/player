@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Плеер</title>
+        <!-- JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>   
+        
+        <!-- JS-скрипты -->           
+        <script src="js/custom.js"></script>
+        
+        <!-- Стили -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body> 
+        <!-- Загрузка файла -->
+        <div id="fileinput_box" align='right'>
+            <img class="fileinput_image" src="images/load.png" alt="-" width="50" onclick="showFileInput()">
+            <input id='fileinput' type="file" accept="audio/*" class="button">
+        </div>
+        
+        <!-- Визуализация -->
+        <div id='visualization' align='center'>
+            <p id="info">
+                Перетащите аудиофайл (.ogg, .mp3) сюда или нажмите на 
+                <img class="fileinput_image" src="images/load.png" alt="-" width="50" onclick="showFileInput()">
+            </p>
+            
+            <canvas id="canvas"></canvas>
+        </div>     
+
+        <!-- Кнопки проигрывателя -->
+        <div id="buttons" align="center">
+            <img class='controls' id='play_button' src="images/play.png" alt="-" width="50">
+            <img class='controls' id='stop_button' src="images/stop.png" alt="-" width="50">
+        </div>
+        
+        <footer>
+            &#169; 2015 Мишина И.С.   
+        </footer>
+        
+    </body>
+</html>
